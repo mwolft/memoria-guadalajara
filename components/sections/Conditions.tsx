@@ -25,7 +25,8 @@ export function Conditions() {
   return (
     <section id="conditions" className="py-16 sm:py-20 lg:py-24">
       <div className="max-w-2xl">
-        <p className="mb-4 text-sm font-medium text-stone-600">
+        <p className="mb-4 flex items-center gap-3 text-sm font-medium text-stone-600">
+          <span className="h-px w-8 bg-stone-300" aria-hidden="true" />
           ¿Cuándo puede ayudar este servicio?
         </p>
         <h2 className="text-3xl font-semibold leading-tight tracking-normal text-stone-950 sm:text-4xl">
@@ -41,7 +42,7 @@ export function Conditions() {
         {conditions.map((condition) => (
           <li
             key={condition.title}
-            className="rounded-3xl border border-stone-200/80 bg-white/75 p-6 shadow-[0_14px_40px_rgba(68,64,60,0.07)] transition-all duration-300 hover:-translate-y-1 hover:border-stone-300 hover:bg-white hover:shadow-[0_20px_46px_rgba(68,64,60,0.12)]"
+            className="rounded-3xl border border-stone-200/80 bg-white/75 p-6 shadow-[0_14px_40px_rgba(68,64,60,0.07)] transition-all duration-300 hover:translate-x-1 hover:-translate-y-0.5 hover:border-stone-300 hover:bg-white hover:shadow-[0_20px_46px_rgba(68,64,60,0.12)] active:translate-x-0.5"
           >
             <span className="text-3xl" aria-hidden="true">
               {condition.icon}
