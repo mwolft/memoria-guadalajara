@@ -2,8 +2,8 @@ import { whatsappHref } from "@/lib/contact";
 
 export function CTA() {
   return (
-    <section id="contacto" className="py-14 sm:py-16 lg:py-20">
-      <div className="rounded-3xl bg-stone-900 px-6 py-12 text-center text-white sm:px-10 sm:py-14 lg:px-12">
+    <section id="contacto" className="py-16 sm:py-20 lg:py-24">
+      <div className="rounded-3xl border border-stone-800 bg-stone-900 px-6 py-12 text-center text-white shadow-[0_24px_70px_rgba(28,25,23,0.18)] sm:px-10 sm:py-14 lg:px-12">
         <div className="mx-auto max-w-2xl">
           <h2 className="text-3xl font-semibold leading-tight tracking-normal sm:text-4xl">
             Cuéntanos tu caso
@@ -16,7 +16,7 @@ export function CTA() {
             href={whatsappHref}
             target="_blank"
             rel="noopener noreferrer"
-            className="mt-8 inline-flex h-12 items-center justify-center rounded-full bg-white px-6 text-sm font-medium text-stone-900 hover:bg-stone-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-white"
+            className="mt-8 inline-flex h-12 items-center justify-center rounded-full bg-white px-6 text-sm font-medium text-stone-900 shadow-sm transition-colors hover:bg-stone-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-white"
           >
             Hablar por WhatsApp
           </a>

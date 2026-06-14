@@ -18,8 +18,8 @@ export function Process() {
   ];
 
   return (
-    <section id="process" className="py-14 sm:py-16 lg:py-20">
-      <div className="rounded-3xl bg-stone-50 px-6 py-10 sm:px-10 sm:py-12 lg:px-12">
+    <section id="process" className="py-16 sm:py-20 lg:py-24">
+      <div className="rounded-3xl border border-stone-200/70 bg-[#f6efe5] px-6 py-10 shadow-[0_18px_60px_rgba(68,64,60,0.08)] sm:px-10 sm:py-12 lg:px-12">
         <div className="max-w-2xl">
           <p className="mb-4 text-sm font-medium text-stone-600">
             Cómo son las sesiones
@@ -37,7 +37,7 @@ export function Process() {
           {steps.map((step, index) => (
             <li
               key={step.title}
-              className="rounded-2xl border border-stone-200 bg-white p-6 shadow-sm"
+              className="rounded-2xl border border-stone-200/80 bg-white/85 p-6 shadow-[0_12px_32px_rgba(68,64,60,0.07)] transition-colors hover:border-stone-300 hover:bg-white"
             >
               <span className="flex h-9 w-9 items-center justify-center rounded-full bg-stone-900 text-sm font-medium text-white">
                 {index + 1}

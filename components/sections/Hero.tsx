@@ -36,13 +36,13 @@ export function Hero() {
             href={whatsappHref}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex h-12 items-center justify-center rounded-full bg-stone-900 px-6 text-sm font-medium text-white hover:bg-stone-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-stone-900"
+            className="inline-flex h-12 items-center justify-center rounded-full bg-stone-900 px-6 text-sm font-medium text-white shadow-sm transition-colors hover:bg-stone-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-stone-900"
           >
             Hablar por WhatsApp
           </a>
           <a
             href="#process"
-            className="inline-flex h-12 items-center justify-center rounded-full border border-stone-300 px-6 text-sm font-medium text-stone-800 hover:border-stone-400 hover:bg-stone-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-stone-700"
+            className="inline-flex h-12 items-center justify-center rounded-full border border-stone-300/80 bg-white/60 px-6 text-sm font-medium text-stone-800 shadow-sm transition-colors hover:border-stone-400 hover:bg-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-stone-700"
           >
             Cómo son las sesiones
           </a>
@@ -52,7 +52,7 @@ export function Hero() {
           {indicators.map((indicator) => (
             <li
               key={indicator}
-              className="rounded-full border border-stone-200 bg-stone-50 px-3.5 py-2 text-sm text-stone-700"
+              className="rounded-full border border-stone-200/80 bg-white/70 px-3.5 py-2 text-sm text-stone-700 shadow-sm"
             >
               {indicator}
             </li>
@@ -60,7 +60,7 @@ export function Hero() {
         </ul>
       </div>
 
-      <div className="relative aspect-[16/10] w-full max-w-md overflow-hidden rounded-3xl border border-stone-200 bg-stone-50 shadow-sm lg:aspect-[4/3] lg:max-w-[30rem]">
+      <div className="relative aspect-[16/10] w-full max-w-md overflow-hidden rounded-3xl border border-stone-200/80 bg-stone-50 shadow-[0_24px_70px_rgba(68,64,60,0.13)] lg:aspect-[4/3] lg:max-w-[30rem]">
         <Image
           src={heroImage}
           alt="Sesión de estimulación cognitiva a domicilio"

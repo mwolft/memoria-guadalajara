@@ -23,7 +23,7 @@ export function Conditions() {
   ];
 
   return (
-    <section id="conditions" className="py-14 sm:py-16 lg:py-20">
+    <section id="conditions" className="py-16 sm:py-20 lg:py-24">
       <div className="max-w-2xl">
         <p className="mb-4 text-sm font-medium text-stone-600">
           ¿Cuándo puede ayudar este servicio?
@@ -41,7 +41,7 @@ export function Conditions() {
         {conditions.map((condition) => (
           <li
             key={condition.title}
-            className="rounded-3xl border border-stone-200 bg-stone-50 p-6"
+            className="rounded-3xl border border-stone-200/80 bg-white/75 p-6 shadow-[0_14px_40px_rgba(68,64,60,0.07)] transition-colors hover:border-stone-300 hover:bg-white"
           >
             <span className="text-3xl" aria-hidden="true">
               {condition.icon}

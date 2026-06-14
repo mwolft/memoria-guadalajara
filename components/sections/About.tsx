@@ -11,9 +11,9 @@ export function About() {
   ];
 
   return (
-    <section id="about" className="py-14 sm:py-16 lg:py-20">
+    <section id="about" className="py-16 sm:py-20 lg:py-24">
       <div className="grid gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:items-center lg:gap-14">
-        <div className="relative aspect-[4/3] overflow-hidden rounded-3xl bg-stone-50">
+        <div className="relative aspect-[4/3] overflow-hidden rounded-3xl border border-stone-200/80 bg-stone-50 shadow-[0_24px_70px_rgba(68,64,60,0.12)]">
           <Image
             src={aboutImage}
             alt="Psicólogo especializado en estimulación cognitiva a domicilio"
@@ -44,7 +44,7 @@ export function About() {
             {highlights.map((highlight) => (
               <li
                 key={highlight}
-                className="rounded-full border border-stone-200 bg-stone-50 px-3.5 py-2 text-sm text-stone-700"
+                className="rounded-full border border-stone-200/80 bg-white/70 px-3.5 py-2 text-sm text-stone-700 shadow-sm"
               >
                 {highlight}
               </li>
