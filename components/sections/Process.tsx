@@ -37,7 +37,7 @@ export function Process() {
           {steps.map((step, index) => (
             <li
               key={step.title}
-              className={`rounded-2xl border border-stone-200/80 bg-white/85 p-6 shadow-[0_12px_32px_rgba(68,64,60,0.07)] transition-colors hover:border-stone-300 hover:bg-white reveal reveal-up reveal-delay-${index + 1}`}
+              className={`rounded-2xl border border-stone-200/80 bg-white/85 p-6 shadow-[0_12px_32px_rgba(68,64,60,0.07)] transition-all duration-300 hover:-translate-y-1 hover:border-stone-300 hover:bg-white hover:shadow-[0_18px_42px_rgba(68,64,60,0.12)] reveal reveal-up reveal-delay-${index + 1}`}
             >
               <span className="flex h-9 w-9 items-center justify-center rounded-full bg-stone-900 text-sm font-medium text-white">
                 {index + 1}

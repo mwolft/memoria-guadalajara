@@ -16,7 +16,7 @@ export function CTA() {
             href={whatsappHref}
             target="_blank"
             rel="noopener noreferrer"
-            className="mt-8 inline-flex h-12 items-center justify-center rounded-full bg-white px-6 text-sm font-medium text-stone-900 shadow-sm transition-colors hover:bg-stone-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-white"
+            className="mt-8 inline-flex h-12 items-center justify-center rounded-full bg-white px-6 text-sm font-medium text-stone-900 shadow-sm transition-all duration-300 hover:-translate-y-0.5 hover:bg-stone-100 hover:shadow-md focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-white"
           >
             Hablar por WhatsApp
           </a>

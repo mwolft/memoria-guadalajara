@@ -28,7 +28,7 @@ export function ServiceArea() {
               {areas.map((area) => (
                 <li
                   key={area}
-                  className="rounded-2xl border border-stone-200/80 bg-white/85 px-5 py-4 text-lg font-medium text-stone-800 shadow-[0_10px_28px_rgba(68,64,60,0.06)] transition-colors hover:border-stone-300 hover:bg-white reveal reveal-up"
+                  className="rounded-2xl border border-stone-200/80 bg-white/85 px-5 py-4 text-lg font-medium text-stone-800 shadow-[0_10px_28px_rgba(68,64,60,0.06)] transition-all duration-300 hover:-translate-y-1 hover:border-stone-300 hover:bg-white hover:shadow-[0_16px_36px_rgba(68,64,60,0.11)] reveal reveal-up"
                 >
                   {area}
                 </li>

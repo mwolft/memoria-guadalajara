@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 :root {
-  --background: #fffaf3;
+  --background: #fffdf9;
   --foreground: #171717;
 }
 
@@ -21,7 +21,7 @@ body {
 @keyframes reveal {
   from {
     opacity: 0;
-    transform: translate3d(0, 0.75rem, 0);
+    transform: translate3d(0, 1.35rem, 0);
   }
 
   to {
@@ -42,17 +42,17 @@ body {
 
 .reveal-up {
   --reveal-x: 0;
-  --reveal-y: 1rem;
+  --reveal-y: 1.35rem;
 }
 
 .reveal-left {
   --reveal-x: 0;
-  --reveal-y: 0.875rem;
+  --reveal-y: 1.25rem;
 }
 
 .reveal-right {
   --reveal-x: 0;
-  --reveal-y: 0.875rem;
+  --reveal-y: 1.25rem;
 }
 
 .reveal-delay-1 {
@@ -79,7 +79,7 @@ body {
   @keyframes reveal {
     from {
       opacity: 0;
-      transform: translate3d(var(--reveal-x, 0), var(--reveal-y, 0.75rem), 0);
+      transform: translate3d(var(--reveal-x, 0), var(--reveal-y, 1.35rem), 0);
     }
 
     to {
@@ -89,12 +89,12 @@ body {
   }
 
   .reveal-left {
-    --reveal-x: -1rem;
+    --reveal-x: -1.5rem;
     --reveal-y: 0;
   }
 
   .reveal-right {
-    --reveal-x: 1rem;
+    --reveal-x: 1.5rem;
     --reveal-y: 0;
   }
 }

@@ -27,7 +27,7 @@ export function Benefits() {
           {benefits.map((benefit) => (
             <li
               key={benefit}
-              className="flex gap-4 rounded-2xl border border-stone-200/80 bg-white/75 p-5 text-stone-800 shadow-[0_12px_32px_rgba(68,64,60,0.06)] transition-colors hover:border-stone-300 hover:bg-white reveal reveal-up"
+              className="flex gap-4 rounded-2xl border border-stone-200/80 bg-white/75 p-5 text-stone-800 shadow-[0_12px_32px_rgba(68,64,60,0.06)] transition-all duration-300 hover:-translate-y-1 hover:border-stone-300 hover:bg-white hover:shadow-[0_18px_40px_rgba(68,64,60,0.11)] reveal reveal-up"
             >
               <span
                 aria-hidden="true"

@@ -36,13 +36,13 @@ export function Hero() {
             href={whatsappHref}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex h-12 items-center justify-center rounded-full bg-stone-900 px-6 text-sm font-medium text-white shadow-sm transition-colors hover:bg-stone-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-stone-900"
+            className="inline-flex h-12 items-center justify-center rounded-full bg-stone-900 px-6 text-sm font-medium text-white shadow-sm transition-all duration-300 hover:-translate-y-0.5 hover:bg-stone-700 hover:shadow-md focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-stone-900"
           >
             Hablar por WhatsApp
           </a>
           <a
             href="#process"
-            className="inline-flex h-12 items-center justify-center rounded-full border border-stone-300/80 bg-white/60 px-6 text-sm font-medium text-stone-800 shadow-sm transition-colors hover:border-stone-400 hover:bg-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-stone-700"
+            className="inline-flex h-12 items-center justify-center rounded-full border border-stone-300/80 bg-white/60 px-6 text-sm font-medium text-stone-800 shadow-sm transition-all duration-300 hover:-translate-y-0.5 hover:border-stone-400 hover:bg-white hover:shadow-md focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-stone-700"
           >
             Cómo son las sesiones
           </a>
