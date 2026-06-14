@@ -9,24 +9,24 @@ export function Hero() {
   return (
     <section
       id="hero"
-      className="grid gap-12 py-16 sm:py-20 lg:grid-cols-[1.05fr_0.95fr] lg:items-center lg:gap-16"
+      className="grid min-h-[82svh] gap-10 py-10 sm:py-12 lg:min-h-[86svh] lg:grid-cols-[1.05fr_0.95fr] lg:items-center lg:gap-12"
     >
       <div className="max-w-2xl">
-        <p className="mb-5 text-sm font-medium text-stone-600">
+        <p className="mb-4 text-sm font-medium text-stone-600">
           Psicólogo · Atención a domicilio
         </p>
 
-        <h1 className="text-4xl font-semibold leading-tight tracking-normal text-stone-950 sm:text-5xl lg:text-6xl">
+        <h1 className="text-3xl font-semibold leading-tight tracking-normal text-stone-950 sm:text-4xl lg:text-5xl">
           Estimulación cognitiva a domicilio para personas mayores en
           Guadalajara
         </h1>
 
-        <p className="mt-6 max-w-xl text-lg leading-8 text-stone-700">
+        <p className="mt-5 max-w-xl text-lg leading-8 text-stone-700">
           Sesiones personalizadas para trabajar memoria, atención y autonomía
           desde la comodidad del hogar.
         </p>
 
-        <div className="mt-9 flex flex-col gap-3 sm:flex-row">
+        <div className="mt-7 flex flex-col gap-3 sm:flex-row">
           <a
             href={whatsappHref}
             className="inline-flex h-12 items-center justify-center rounded-full bg-stone-900 px-6 text-sm font-medium text-white hover:bg-stone-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-stone-900"
@@ -41,7 +41,7 @@ export function Hero() {
           </a>
         </div>
 
-        <ul className="mt-7 flex flex-wrap gap-2.5">
+        <ul className="mt-6 flex flex-wrap gap-2.5">
           {indicators.map((indicator) => (
             <li
               key={indicator}
@@ -53,7 +53,7 @@ export function Hero() {
         </ul>
       </div>
 
-      <div className="flex min-h-80 items-center justify-center rounded-2xl border border-stone-200 bg-stone-50 text-sm font-medium text-stone-500 shadow-sm sm:min-h-96">
+      <div className="flex aspect-[4/3] w-full max-w-md items-center justify-center justify-self-center rounded-2xl border border-stone-200 bg-stone-50 text-sm font-medium text-stone-500 shadow-sm lg:max-w-[30rem]">
         Imagen principal
       </div>
     </section>
