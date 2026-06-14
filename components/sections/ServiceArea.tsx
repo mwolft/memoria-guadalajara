@@ -8,7 +8,7 @@ export function ServiceArea() {
 
   return (
     <section id="zona" className="py-16 sm:py-20 lg:py-24">
-      <div className="rounded-3xl border border-stone-200/70 bg-[#fbf4ea] px-6 py-10 shadow-[0_18px_60px_rgba(68,64,60,0.08)] sm:px-10 sm:py-12 lg:px-12">
+      <div className="rounded-3xl border border-stone-200/70 bg-[#fbf4ea] px-6 py-10 shadow-[0_18px_60px_rgba(68,64,60,0.08)] reveal reveal-up sm:px-10 sm:py-12 lg:px-12">
         <div className="grid gap-10 lg:grid-cols-[1fr_0.9fr] lg:items-start lg:gap-14">
           <div className="max-w-2xl">
             <p className="mb-4 text-sm font-medium text-stone-600">
@@ -28,7 +28,7 @@ export function ServiceArea() {
               {areas.map((area) => (
                 <li
                   key={area}
-                  className="rounded-2xl border border-stone-200/80 bg-white/85 px-5 py-4 text-lg font-medium text-stone-800 shadow-[0_10px_28px_rgba(68,64,60,0.06)] transition-colors hover:border-stone-300 hover:bg-white"
+                  className="rounded-2xl border border-stone-200/80 bg-white/85 px-5 py-4 text-lg font-medium text-stone-800 shadow-[0_10px_28px_rgba(68,64,60,0.06)] transition-colors hover:border-stone-300 hover:bg-white reveal reveal-up"
                 >
                   {area}
                 </li>

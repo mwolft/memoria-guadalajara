@@ -17,3 +17,95 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+@keyframes reveal {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 0.75rem, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.reveal,
+.reveal-up,
+.reveal-left,
+.reveal-right {
+  animation-duration: 700ms;
+  animation-fill-mode: both;
+  animation-name: reveal;
+  animation-timing-function: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.reveal-up {
+  --reveal-x: 0;
+  --reveal-y: 1rem;
+}
+
+.reveal-left {
+  --reveal-x: 0;
+  --reveal-y: 0.875rem;
+}
+
+.reveal-right {
+  --reveal-x: 0;
+  --reveal-y: 0.875rem;
+}
+
+.reveal-delay-1 {
+  animation-delay: 90ms;
+}
+
+.reveal-delay-2 {
+  animation-delay: 160ms;
+}
+
+.reveal-delay-3 {
+  animation-delay: 230ms;
+}
+
+.reveal-delay-4 {
+  animation-delay: 300ms;
+}
+
+.reveal-delay-5 {
+  animation-delay: 370ms;
+}
+
+@media (min-width: 768px) {
+  @keyframes reveal {
+    from {
+      opacity: 0;
+      transform: translate3d(var(--reveal-x, 0), var(--reveal-y, 0.75rem), 0);
+    }
+
+    to {
+      opacity: 1;
+      transform: translate3d(0, 0, 0);
+    }
+  }
+
+  .reveal-left {
+    --reveal-x: -1rem;
+    --reveal-y: 0;
+  }
+
+  .reveal-right {
+    --reveal-x: 1rem;
+    --reveal-y: 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal,
+  .reveal-up,
+  .reveal-left,
+  .reveal-right {
+    animation: none;
+    opacity: 1;
+    transform: none;
+  }
+}

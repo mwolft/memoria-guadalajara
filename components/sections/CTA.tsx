@@ -3,7 +3,7 @@ import { whatsappHref } from "@/lib/contact";
 export function CTA() {
   return (
     <section id="contacto" className="py-16 sm:py-20 lg:py-24">
-      <div className="rounded-3xl border border-stone-800 bg-stone-900 px-6 py-12 text-center text-white shadow-[0_24px_70px_rgba(28,25,23,0.18)] sm:px-10 sm:py-14 lg:px-12">
+      <div className="rounded-3xl border border-stone-800 bg-stone-900 px-6 py-12 text-center text-white shadow-[0_24px_70px_rgba(28,25,23,0.18)] reveal reveal-up sm:px-10 sm:py-14 lg:px-12">
         <div className="mx-auto max-w-2xl">
           <h2 className="text-3xl font-semibold leading-tight tracking-normal sm:text-4xl">
             Cuéntanos tu caso

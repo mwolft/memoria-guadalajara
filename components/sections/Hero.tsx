@@ -16,7 +16,7 @@ export function Hero() {
       id="hero"
       className="grid min-h-[82svh] gap-10 py-10 sm:py-12 lg:min-h-[86svh] lg:grid-cols-[1.05fr_0.95fr] lg:items-center lg:gap-12"
     >
-      <div className="max-w-2xl">
+      <div className="max-w-2xl reveal reveal-left">
         <p className="mb-4 text-sm font-medium text-stone-600">
           Psicólogo · Atención a domicilio
         </p>
@@ -60,7 +60,7 @@ export function Hero() {
         </ul>
       </div>
 
-      <div className="relative aspect-[16/10] w-full max-w-md overflow-hidden rounded-3xl border border-stone-200/80 bg-stone-50 shadow-[0_24px_70px_rgba(68,64,60,0.13)] lg:aspect-[4/3] lg:max-w-[30rem]">
+      <div className="relative aspect-[16/10] w-full max-w-md overflow-hidden rounded-3xl border border-stone-200/80 bg-stone-50 shadow-[0_24px_70px_rgba(68,64,60,0.13)] reveal reveal-right reveal-delay-1 lg:aspect-[4/3] lg:max-w-[30rem]">
         <Image
           src={heroImage}
           alt="Sesión de estimulación cognitiva a domicilio"

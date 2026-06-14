@@ -30,7 +30,7 @@ export function FAQ() {
   return (
     <section id="faq" className="py-16 sm:py-20 lg:py-24">
       <div className="grid gap-10 lg:grid-cols-[0.85fr_1.15fr] lg:gap-14">
-        <div className="max-w-2xl">
+        <div className="max-w-2xl reveal reveal-left">
           <p className="mb-4 text-sm font-medium text-stone-600">
             Preguntas frecuentes
           </p>
@@ -43,7 +43,7 @@ export function FAQ() {
           {faqs.map((faq) => (
             <div
               key={faq.question}
-              className="rounded-3xl border border-stone-200/80 bg-white/75 p-6 shadow-[0_12px_32px_rgba(68,64,60,0.06)] transition-colors hover:border-stone-300 hover:bg-white"
+              className="rounded-3xl border border-stone-200/80 bg-white/75 p-6 shadow-[0_12px_32px_rgba(68,64,60,0.06)] transition-colors hover:border-stone-300 hover:bg-white reveal reveal-up"
             >
               <dt className="text-lg font-semibold leading-7 text-stone-950">
                 {faq.question}

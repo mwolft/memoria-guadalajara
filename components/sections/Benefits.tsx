@@ -10,7 +10,7 @@ export function Benefits() {
   return (
     <section id="benefits" className="py-16 sm:py-20 lg:py-24">
       <div className="grid gap-10 lg:grid-cols-[0.95fr_1.05fr] lg:items-start lg:gap-14">
-        <div className="max-w-2xl">
+        <div className="max-w-2xl reveal reveal-left">
           <p className="mb-4 text-sm font-medium text-stone-600">
             Beneficios
           </p>
@@ -27,7 +27,7 @@ export function Benefits() {
           {benefits.map((benefit) => (
             <li
               key={benefit}
-              className="flex gap-4 rounded-2xl border border-stone-200/80 bg-white/75 p-5 text-stone-800 shadow-[0_12px_32px_rgba(68,64,60,0.06)] transition-colors hover:border-stone-300 hover:bg-white"
+              className="flex gap-4 rounded-2xl border border-stone-200/80 bg-white/75 p-5 text-stone-800 shadow-[0_12px_32px_rgba(68,64,60,0.06)] transition-colors hover:border-stone-300 hover:bg-white reveal reveal-up"
             >
               <span
                 aria-hidden="true"
