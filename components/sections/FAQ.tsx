@@ -1,3 +1,5 @@
+import { Reveal } from "@/components/Reveal";
+
 export function FAQ() {
   const faqs = [
     {
@@ -40,16 +42,19 @@ export function FAQ() {
         </div>
 
         <dl className="grid gap-4">
-          {faqs.map((faq) => (
-            <div
+          {faqs.map((faq, index) => (
+            <Reveal
               key={faq.question}
-              className="rounded-3xl border border-stone-200/80 bg-white/75 p-6 shadow-[0_12px_32px_rgba(68,64,60,0.06)] transition-all duration-300 hover:-translate-y-1 hover:border-stone-300 hover:bg-white hover:shadow-[0_18px_42px_rgba(68,64,60,0.11)] reveal reveal-up"
+              direction={index % 2 === 0 ? "left" : "right"}
+              delay={index * 70}
             >
-              <dt className="text-lg font-semibold leading-7 text-stone-950">
-                {faq.question}
-              </dt>
-              <dd className="mt-3 leading-7 text-stone-700">{faq.answer}</dd>
-            </div>
+              <div className="rounded-3xl border border-stone-200/80 bg-white/75 p-6 shadow-[0_12px_32px_rgba(68,64,60,0.06)] transition-all duration-300 hover:-translate-y-1 hover:border-stone-300 hover:bg-white hover:shadow-[0_18px_42px_rgba(68,64,60,0.11)]">
+                <dt className="text-lg font-semibold leading-7 text-stone-950">
+                  {faq.question}
+                </dt>
+                <dd className="mt-3 leading-7 text-stone-700">{faq.answer}</dd>
+              </div>
+            </Reveal>
           ))}
         </dl>
       </div>

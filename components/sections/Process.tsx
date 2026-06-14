@@ -1,3 +1,5 @@
+import { Reveal } from "@/components/Reveal";
+
 export function Process() {
   const steps = [
     {
@@ -35,20 +37,23 @@ export function Process() {
 
         <ol className="mt-10 grid gap-4 md:grid-cols-3">
           {steps.map((step, index) => (
-            <li
+            <Reveal
               key={step.title}
-              className={`rounded-2xl border border-stone-200/80 bg-white/85 p-6 shadow-[0_12px_32px_rgba(68,64,60,0.07)] transition-all duration-300 hover:-translate-y-1 hover:border-stone-300 hover:bg-white hover:shadow-[0_18px_42px_rgba(68,64,60,0.12)] reveal reveal-up reveal-delay-${index + 1}`}
+              direction={index === 1 ? "up" : index === 0 ? "left" : "right"}
+              delay={index * 100}
             >
-              <span className="flex h-9 w-9 items-center justify-center rounded-full bg-stone-900 text-sm font-medium text-white">
-                {index + 1}
-              </span>
-              <h3 className="mt-6 text-xl font-semibold text-stone-950">
-                {step.title}
-              </h3>
-              <p className="mt-3 leading-7 text-stone-700">
-                {step.description}
-              </p>
-            </li>
+              <li className="rounded-2xl border border-stone-200/80 bg-white/85 p-6 shadow-[0_12px_32px_rgba(68,64,60,0.07)] transition-all duration-300 hover:-translate-y-1 hover:border-stone-300 hover:bg-white hover:shadow-[0_18px_42px_rgba(68,64,60,0.12)]">
+                <span className="flex h-9 w-9 items-center justify-center rounded-full bg-stone-900 text-sm font-medium text-white">
+                  {index + 1}
+                </span>
+                <h3 className="mt-6 text-xl font-semibold text-stone-950">
+                  {step.title}
+                </h3>
+                <p className="mt-3 leading-7 text-stone-700">
+                  {step.description}
+                </p>
+              </li>
+            </Reveal>
           ))}
         </ol>
       </div>

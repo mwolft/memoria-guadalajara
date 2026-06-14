@@ -1,3 +1,5 @@
+import { Reveal } from "@/components/Reveal";
+
 export function Conditions() {
   const conditions = [
     {
@@ -38,21 +40,24 @@ export function Conditions() {
       </div>
 
       <ul className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
-        {conditions.map((condition) => (
-          <li
+        {conditions.map((condition, index) => (
+          <Reveal
             key={condition.title}
-            className="rounded-3xl border border-stone-200/80 bg-white/75 p-6 shadow-[0_14px_40px_rgba(68,64,60,0.07)] transition-all duration-300 hover:-translate-y-1 hover:border-stone-300 hover:bg-white hover:shadow-[0_20px_46px_rgba(68,64,60,0.12)] reveal reveal-up"
+            direction={index % 2 === 0 ? "left" : "right"}
+            delay={index * 80}
           >
-            <span className="text-3xl" aria-hidden="true">
-              {condition.icon}
-            </span>
-            <h3 className="mt-6 text-xl font-semibold text-stone-950">
-              {condition.title}
-            </h3>
-            <p className="mt-3 leading-7 text-stone-700">
-              {condition.description}
-            </p>
-          </li>
+            <li className="rounded-3xl border border-stone-200/80 bg-white/75 p-6 shadow-[0_14px_40px_rgba(68,64,60,0.07)] transition-all duration-300 hover:-translate-y-1 hover:border-stone-300 hover:bg-white hover:shadow-[0_20px_46px_rgba(68,64,60,0.12)]">
+              <span className="text-3xl" aria-hidden="true">
+                {condition.icon}
+              </span>
+              <h3 className="mt-6 text-xl font-semibold text-stone-950">
+                {condition.title}
+              </h3>
+              <p className="mt-3 leading-7 text-stone-700">
+                {condition.description}
+              </p>
+            </li>
+          </Reveal>
         ))}
       </ul>
     </section>
