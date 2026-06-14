@@ -1,3 +1,8 @@
+import Image from "next/image";
+
+const heroImage =
+  "https://res.cloudinary.com/dhm8zqtkq/image/upload/v1781419090/a-domicilio_yhmzlf.png";
+
 export function Hero() {
   const whatsappHref = "#";
   const indicators = [
@@ -53,8 +58,15 @@ export function Hero() {
         </ul>
       </div>
 
-      <div className="flex aspect-[4/3] w-full max-w-md items-center justify-center justify-self-center rounded-2xl border border-stone-200 bg-stone-50 text-sm font-medium text-stone-500 shadow-sm lg:max-w-[30rem]">
-        Imagen principal
+      <div className="relative aspect-[16/10] w-full max-w-md overflow-hidden rounded-3xl border border-stone-200 bg-stone-50 shadow-sm lg:aspect-[4/3] lg:max-w-[30rem]">
+        <Image
+          src={heroImage}
+          alt="Sesión de estimulación cognitiva a domicilio"
+          fill
+          priority
+          sizes="(min-width: 1024px) 30rem, (min-width: 640px) 28rem, calc(100vw - 3rem)"
+          className="object-cover"
+        />
       </div>
     </section>
   );
