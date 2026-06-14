@@ -1,10 +1,10 @@
 import Image from "next/image";
+import { whatsappHref } from "@/lib/contact";
 
 const heroImage =
   "https://res.cloudinary.com/dhm8zqtkq/image/upload/v1781419090/a-domicilio_yhmzlf.png";
 
 export function Hero() {
-  const whatsappHref = "#";
   const indicators = [
     "Atención a domicilio",
     "Guadalajara y alrededores",
@@ -34,6 +34,8 @@ export function Hero() {
         <div className="mt-7 flex flex-col gap-3 sm:flex-row">
           <a
             href={whatsappHref}
+            target="_blank"
+            rel="noopener noreferrer"
             className="inline-flex h-12 items-center justify-center rounded-full bg-stone-900 px-6 text-sm font-medium text-white hover:bg-stone-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-stone-900"
           >
             Hablar por WhatsApp
