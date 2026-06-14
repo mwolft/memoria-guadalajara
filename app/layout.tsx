@@ -4,7 +4,9 @@ import "./globals.css";
 
 const title = "Estimulación cognitiva a domicilio en Guadalajara";
 const description =
-  "Psicólogo especializado en estimulación cognitiva para personas mayores en Guadalajara. Atención a domicilio y sesiones personalizadas.";
+  "Estimulación cognitiva para personas mayores en Guadalajara. Atención a domicilio, acompañamiento profesional y sesiones personalizadas.";
+const heroImage =
+  "https://res.cloudinary.com/dhm8zqtkq/image/upload/v1781419090/a-domicilio_yhmzlf.png";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -20,15 +22,27 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://memoriaguadalajara.com"),
   title,
   description,
+  alternates: {
+    canonical: "https://memoriaguadalajara.com/",
+  },
   openGraph: {
     title,
     description,
     url: "/",
     locale: "es_ES",
     type: "website",
+    images: [
+      {
+        url: heroImage,
+        alt: "Sesión de estimulación cognitiva a domicilio",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
+    title,
+    description,
+    images: [heroImage],
   },
   robots: {
     index: true,

@@ -8,7 +8,7 @@ export function Hero() {
   const indicators = [
     "Atención a domicilio",
     "Guadalajara y alrededores",
-    "Psicólogo",
+    "Gerontología social",
   ];
 
   return (
@@ -18,7 +18,7 @@ export function Hero() {
     >
       <div className="max-w-2xl">
         <p className="mb-4 text-sm font-medium text-stone-600">
-          Psicólogo · Atención a domicilio
+          Estimulación cognitiva · Atención a domicilio
         </p>
 
         <h1 className="text-3xl font-semibold leading-tight tracking-normal text-stone-950 sm:text-4xl lg:text-5xl">

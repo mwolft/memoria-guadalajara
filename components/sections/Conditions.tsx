@@ -18,7 +18,7 @@ export function Conditions() {
     {
       icon: "❤️",
       title: "Acompañamiento profesional",
-      description: "Intervención cercana y adaptada a cada persona.",
+      description: "Acompañamiento cercano y adaptado a cada persona.",
     },
   ];
 

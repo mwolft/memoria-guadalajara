@@ -5,7 +5,7 @@ const aboutImage =
 
 export function About() {
   const highlights = [
-    "Psicólogo",
+    "Gerontología social",
     "Atención personalizada",
     "Sesiones a domicilio",
   ];
@@ -16,7 +16,7 @@ export function About() {
         <div className="relative aspect-[4/3] overflow-hidden rounded-3xl border border-stone-200/80 bg-stone-50 shadow-[0_24px_70px_rgba(68,64,60,0.12)]">
           <Image
             src={aboutImage}
-            alt="Psicólogo especializado en estimulación cognitiva a domicilio"
+            alt="Acompañamiento profesional en estimulación cognitiva a domicilio"
             fill
             sizes="(min-width: 1024px) 28rem, calc(100vw - 3rem)"
             className="object-cover"
@@ -33,13 +33,14 @@ export function About() {
           </h2>
           <div className="mt-5 space-y-4 text-lg leading-8 text-stone-700">
             <p>
-              Soy psicólogo y acompaño a personas mayores y familias que buscan
-              trabajar la memoria, la atención y la autonomía desde un entorno
-              cómodo y familiar.
+              Trabajo con personas mayores y familias que buscan mantener la
+              memoria, la atención y la autonomía desde un entorno cómodo y
+              familiar, con formación de Máster en Gerontología Social.
             </p>
             <p>
-              Cada sesión se adapta a la situación de la persona, respetando sus
-              ritmos y creando un espacio tranquilo de trabajo.
+              Cada sesión de estimulación cognitiva se adapta a la situación de
+              la persona, respetando sus ritmos y creando un espacio tranquilo
+              de acompañamiento en el domicilio.
             </p>
           </div>
 

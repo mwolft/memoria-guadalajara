@@ -6,7 +6,7 @@ export function Process() {
         "Resolvemos dudas y conocemos el caso antes de plantear el trabajo.",
     },
     {
-      title: "Valoración inicial",
+      title: "Primer encuentro",
       description:
         "Observamos necesidades, rutinas y objetivos para orientar las sesiones.",
     },
