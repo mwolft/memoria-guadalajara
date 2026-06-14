@@ -1,5 +1,3 @@
-import { Reveal } from "@/components/Reveal";
-
 export function Process() {
   const steps = [
     {
@@ -21,7 +19,7 @@ export function Process() {
 
   return (
     <section id="process" className="py-16 sm:py-20 lg:py-24">
-      <div className="rounded-3xl border border-stone-200/70 bg-[#f6efe5] px-6 py-10 shadow-[0_18px_60px_rgba(68,64,60,0.08)] reveal reveal-up sm:px-10 sm:py-12 lg:px-12">
+      <div className="rounded-3xl border border-stone-200/70 bg-[#f6efe5] px-6 py-10 shadow-[0_18px_60px_rgba(68,64,60,0.08)] sm:px-10 sm:py-12 lg:px-12">
         <div className="max-w-2xl">
           <p className="mb-4 text-sm font-medium text-stone-600">
             Cómo son las sesiones
@@ -37,25 +35,20 @@ export function Process() {
 
         <ol className="mt-10 grid gap-4 md:grid-cols-3">
           {steps.map((step, index) => (
-            <Reveal
+            <li
               key={step.title}
-              direction={index === 1 ? "up" : index === 0 ? "left" : "right"}
-              delay={index * 100}
+              className="rounded-2xl border border-stone-200/80 bg-white/85 p-6 shadow-[0_12px_32px_rgba(68,64,60,0.07)] transition-all duration-300 hover:-translate-y-1 hover:border-stone-300 hover:bg-white hover:shadow-[0_18px_42px_rgba(68,64,60,0.12)]"
             >
-              <li>
-                <div className="h-full rounded-2xl border border-stone-200/80 bg-white/85 p-6 shadow-[0_12px_32px_rgba(68,64,60,0.07)] transition-all duration-300 hover:-translate-y-1 hover:border-stone-300 hover:bg-white hover:shadow-[0_18px_42px_rgba(68,64,60,0.12)]">
-                  <span className="flex h-9 w-9 items-center justify-center rounded-full bg-stone-900 text-sm font-medium text-white">
-                    {index + 1}
-                  </span>
-                  <h3 className="mt-6 text-xl font-semibold text-stone-950">
-                    {step.title}
-                  </h3>
-                  <p className="mt-3 leading-7 text-stone-700">
-                    {step.description}
-                  </p>
-                </div>
-              </li>
-            </Reveal>
+              <span className="flex h-9 w-9 items-center justify-center rounded-full bg-stone-900 text-sm font-medium text-white">
+                {index + 1}
+              </span>
+              <h3 className="mt-6 text-xl font-semibold text-stone-950">
+                {step.title}
+              </h3>
+              <p className="mt-3 leading-7 text-stone-700">
+                {step.description}
+              </p>
+            </li>
           ))}
         </ol>
       </div>
