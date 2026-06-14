@@ -1,5 +1,3 @@
-import { Reveal } from "@/components/Reveal";
-
 export function ServiceArea() {
   const areas = [
     "Guadalajara",
@@ -27,16 +25,13 @@ export function ServiceArea() {
 
           <div>
             <ul className="grid gap-3 sm:grid-cols-2 lg:grid-cols-1">
-              {areas.map((area, index) => (
-                <Reveal
+              {areas.map((area) => (
+                <li
                   key={area}
-                  direction={index % 2 === 0 ? "left" : "right"}
-                  delay={index * 80}
+                  className="rounded-2xl border border-stone-200/80 bg-white/85 px-5 py-4 text-lg font-medium text-stone-800 shadow-[0_10px_28px_rgba(68,64,60,0.06)] transition-all duration-300 hover:-translate-y-1 hover:border-stone-300 hover:bg-white hover:shadow-[0_16px_36px_rgba(68,64,60,0.11)] reveal reveal-up"
                 >
-                  <li className="rounded-2xl border border-stone-200/80 bg-white/85 px-5 py-4 text-lg font-medium text-stone-800 shadow-[0_10px_28px_rgba(68,64,60,0.06)] transition-all duration-300 hover:-translate-y-1 hover:border-stone-300 hover:bg-white hover:shadow-[0_16px_36px_rgba(68,64,60,0.11)]">
-                    {area}
-                  </li>
-                </Reveal>
+                  {area}
+                </li>
               ))}
             </ul>
             <p className="mt-5 leading-7 text-stone-700">

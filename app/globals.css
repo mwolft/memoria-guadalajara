@@ -112,15 +112,11 @@ body {
 
 .viewport-reveal {
   opacity: 0;
-  transform: translate3d(0, 1.35rem, 0);
+  transform: translate3d(0, 1.5rem, 0);
   transition:
     opacity 720ms cubic-bezier(0.22, 1, 0.36, 1),
-    transform 720ms cubic-bezier(0.22, 1, 0.36, 1),
-    border-color 300ms ease,
-    background-color 300ms ease,
-    box-shadow 300ms ease;
-  transition-delay: var(--reveal-delay, 0ms), var(--reveal-delay, 0ms), 0ms,
-    0ms, 0ms;
+    transform 720ms cubic-bezier(0.22, 1, 0.36, 1);
+  transition-delay: var(--reveal-delay, 0ms);
 }
 
 .viewport-reveal.is-visible {
@@ -128,22 +124,18 @@ body {
   transform: translate3d(0, 0, 0);
 }
 
-.viewport-reveal.is-visible:hover {
-  transform: translate3d(0, -0.25rem, 0);
-}
-
 .viewport-reveal-left,
 .viewport-reveal-right {
-  transform: translate3d(0, 1.1rem, 0);
+  transform: translate3d(0, 1.5rem, 0);
 }
 
 @media (min-width: 768px) {
   .viewport-reveal-left {
-    transform: translate3d(-1.35rem, 0, 0);
+    transform: translate3d(-1.5rem, 0, 0);
   }
 
   .viewport-reveal-right {
-    transform: translate3d(1.35rem, 0, 0);
+    transform: translate3d(1.5rem, 0, 0);
   }
 }
 

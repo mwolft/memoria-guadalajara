@@ -1,5 +1,3 @@
-import { Reveal } from "@/components/Reveal";
-
 export function Benefits() {
   const benefits = [
     "Mantener la mente activa",
@@ -26,22 +24,19 @@ export function Benefits() {
         </div>
 
         <ul className="grid gap-3">
-          {benefits.map((benefit, index) => (
-            <Reveal
+          {benefits.map((benefit) => (
+            <li
               key={benefit}
-              direction={index % 2 === 0 ? "left" : "right"}
-              delay={index * 70}
+              className="flex gap-4 rounded-2xl border border-stone-200/80 bg-white/75 p-5 text-stone-800 shadow-[0_12px_32px_rgba(68,64,60,0.06)] transition-all duration-300 hover:-translate-y-1 hover:border-stone-300 hover:bg-white hover:shadow-[0_18px_40px_rgba(68,64,60,0.11)] reveal reveal-up"
             >
-              <li className="flex gap-4 rounded-2xl border border-stone-200/80 bg-white/75 p-5 text-stone-800 shadow-[0_12px_32px_rgba(68,64,60,0.06)] transition-all duration-300 hover:-translate-y-1 hover:border-stone-300 hover:bg-white hover:shadow-[0_18px_40px_rgba(68,64,60,0.11)]">
-                <span
-                  aria-hidden="true"
-                  className="mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-stone-900 text-sm font-medium text-white"
-                >
-                  ✓
-                </span>
-                <span className="text-lg leading-7">{benefit}</span>
-              </li>
-            </Reveal>
+              <span
+                aria-hidden="true"
+                className="mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-stone-900 text-sm font-medium text-white"
+              >
+                ✓
+              </span>
+              <span className="text-lg leading-7">{benefit}</span>
+            </li>
           ))}
         </ul>
       </div>
