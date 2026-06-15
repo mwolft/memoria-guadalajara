@@ -1,7 +1,7 @@
 import Image from "next/image";
 
 const aboutImage =
-  "https://res.cloudinary.com/dhm8zqtkq/image/upload/v1781419028/sobre-mi_pfmwqv.png";
+  "https://res.cloudinary.com/dhm8zqtkq/image/upload/v1781520528/terapeuta-ocupacional-guadalajara_mzwesi.png";
 
 export function About() {
   const highlights = [
