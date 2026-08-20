@@ -5,6 +5,7 @@ import { Conditions } from "@/components/sections/Conditions";
 import { CTA } from "@/components/sections/CTA";
 import { FAQ } from "@/components/sections/FAQ";
 import { Hero } from "@/components/sections/Hero";
+import { Pricing } from "@/components/sections/Pricing";
 import { Process } from "@/components/sections/Process";
 import { ServiceArea } from "@/components/sections/ServiceArea";
 
@@ -16,6 +17,7 @@ export default function Home() {
         <Conditions />
         <Process />
         <Benefits />
+        <Pricing />
         <About />
         <ServiceArea />
         <FAQ />
