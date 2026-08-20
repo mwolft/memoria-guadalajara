@@ -1,4 +1,4 @@
-import { whatsappHref } from "@/lib/contact";
+import { createWhatsappHref } from "@/lib/contact";
 
 const pricingOptions = [
   {
@@ -6,25 +6,40 @@ const pricingOptions = [
     detail: "60 min",
     price: "55 €",
     perSession: "55 € por sesión",
+    cta: "Consultar sesión",
+    message:
+      "Hola, quería consultar disponibilidad para una sesión individual de estimulación cognitiva a domicilio.",
   },
   {
     name: "Bono de 5 sesiones",
     detail: "5 sesiones",
     price: "260 €",
     perSession: "52 € por sesión",
+    saving: "Ahorras 15 €",
+    cta: "Consultar bono",
+    message:
+      "Hola, quería consultar disponibilidad para el bono de 5 sesiones de estimulación cognitiva a domicilio.",
   },
   {
     name: "1 sesión semanal",
     detail: "4 sesiones al mes",
     price: "200 €/mes",
     perSession: "50 € por sesión",
+    saving: "Ahorras 20 €/mes",
     badge: "Frecuencia habitual",
+    cta: "Consultar este plan",
+    message:
+      "Hola, quería consultar disponibilidad para el plan de 1 sesión semanal de estimulación cognitiva a domicilio.",
   },
   {
     name: "2 sesiones semanales",
     detail: "8 sesiones al mes",
     price: "380 €/mes",
     perSession: "47,50 € por sesión",
+    saving: "Ahorras 60 €/mes",
+    cta: "Consultar este plan",
+    message:
+      "Hola, quería consultar disponibilidad para el plan de 2 sesiones semanales de estimulación cognitiva a domicilio.",
   },
 ];
 
@@ -76,23 +91,32 @@ export function Pricing() {
               <p className="mt-3 text-base leading-7 text-stone-700">
                 {option.perSession}
               </p>
+              {option.saving ? (
+                <p className="mt-3 text-sm font-medium text-stone-600">
+                  {option.saving}
+                </p>
+              ) : null}
+              <a
+                href={createWhatsappHref(option.message)}
+                target="_blank"
+                rel="noopener noreferrer"
+                className={`mt-6 inline-flex h-11 items-center justify-center rounded-full px-5 text-sm font-medium shadow-sm transition-all duration-300 hover:-translate-y-0.5 hover:shadow-md focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 ${
+                  option.badge
+                    ? "bg-stone-900 text-white hover:bg-stone-700 focus-visible:outline-stone-900"
+                    : "border border-stone-300/80 bg-white/70 text-stone-800 hover:border-stone-400 hover:bg-white focus-visible:outline-stone-700"
+                }`}
+              >
+                {option.cta}
+              </a>
             </li>
           ))}
         </ul>
 
-        <div className="mt-10 flex flex-col gap-5 border-t border-stone-200/80 pt-8 sm:flex-row sm:items-center sm:justify-between">
+        <div className="mt-10 border-t border-stone-200/80 pt-8">
           <p className="max-w-2xl leading-7 text-stone-700">
             Las sesiones son individuales y adaptadas a las necesidades y
             objetivos de cada persona.
           </p>
-          <a
-            href={whatsappHref}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex h-12 items-center justify-center rounded-full bg-stone-900 px-6 text-sm font-medium text-white shadow-sm transition-all duration-300 hover:-translate-y-0.5 hover:bg-stone-700 hover:shadow-md focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-stone-900"
-          >
-            Consultar disponibilidad
-          </a>
         </div>
       </div>
     </section>
