@@ -71,36 +71,40 @@ export function Pricing() {
                   : "border-stone-200/80 hover:border-stone-300"
               }`}
             >
-              <div className="flex min-h-14 items-start justify-between gap-3">
-                <h3 className="text-xl font-semibold leading-7 text-stone-950">
-                  {option.name}
-                </h3>
-                {option.badge ? (
-                  <span className="shrink-0 rounded-full border border-stone-300 bg-stone-100 px-3 py-1 text-xs font-medium text-stone-700">
-                    {option.badge}
-                  </span>
-                ) : null}
-              </div>
+              <div className="flex flex-1 flex-col">
+                <div className="flex min-h-14 items-start justify-between gap-3">
+                  <h3 className="text-xl font-semibold leading-7 text-stone-950">
+                    {option.name}
+                  </h3>
+                  {option.badge ? (
+                    <span className="shrink-0 rounded-full border border-stone-300 bg-stone-100 px-3 py-1 text-xs font-medium text-stone-700">
+                      {option.badge}
+                    </span>
+                  ) : null}
+                </div>
 
-              <p className="mt-5 text-sm font-medium text-stone-600">
-                {option.detail}
-              </p>
-              <p className="mt-3 text-4xl font-semibold tracking-normal text-stone-950">
-                {option.price}
-              </p>
-              <p className="mt-3 text-base leading-7 text-stone-700">
-                {option.perSession}
-              </p>
-              {option.saving ? (
-                <p className="mt-3 text-sm font-medium text-stone-600">
-                  {option.saving}
-                </p>
-              ) : null}
+                <div className="flex flex-1 flex-col">
+                  <p className="mt-5 text-sm font-medium text-stone-600">
+                    {option.detail}
+                  </p>
+                  <p className="mt-3 text-4xl font-semibold tracking-normal text-stone-950">
+                    {option.price}
+                  </p>
+                  <p className="mt-3 text-base leading-7 text-stone-700">
+                    {option.perSession}
+                  </p>
+                  {option.saving ? (
+                    <p className="mt-3 text-sm font-medium text-stone-600">
+                      {option.saving}
+                    </p>
+                  ) : null}
+                </div>
+              </div>
               <a
                 href={createWhatsappHref(option.message)}
                 target="_blank"
                 rel="noopener noreferrer"
-                className={`mt-6 inline-flex h-11 items-center justify-center rounded-full px-5 text-sm font-medium shadow-sm transition-all duration-300 hover:-translate-y-0.5 hover:shadow-md focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 ${
+                className={`mt-auto inline-flex h-11 items-center justify-center rounded-full px-5 text-sm font-medium shadow-sm transition-all duration-300 hover:-translate-y-0.5 hover:shadow-md focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 ${
                   option.badge
                     ? "bg-stone-900 text-white hover:bg-stone-700 focus-visible:outline-stone-900"
                     : "border border-stone-300/80 bg-white/70 text-stone-800 hover:border-stone-400 hover:bg-white focus-visible:outline-stone-700"
