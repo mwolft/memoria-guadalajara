@@ -100,18 +100,20 @@ export function Pricing() {
                   ) : null}
                 </div>
               </div>
-              <a
-                href={createWhatsappHref(option.message)}
-                target="_blank"
-                rel="noopener noreferrer"
-                className={`mt-auto inline-flex h-11 items-center justify-center rounded-full px-5 text-sm font-medium shadow-sm transition-all duration-300 hover:-translate-y-0.5 hover:shadow-md focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 ${
-                  option.badge
-                    ? "bg-stone-900 text-white hover:bg-stone-700 focus-visible:outline-stone-900"
-                    : "border border-stone-300/80 bg-white/70 text-stone-800 hover:border-stone-400 hover:bg-white focus-visible:outline-stone-700"
-                }`}
-              >
-                {option.cta}
-              </a>
+              <div className="mt-auto pt-6">
+                <a
+                  href={createWhatsappHref(option.message)}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={`inline-flex h-11 w-full items-center justify-center rounded-full px-5 text-sm font-medium shadow-sm transition-all duration-300 hover:-translate-y-0.5 hover:shadow-md focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 ${
+                    option.badge
+                      ? "bg-stone-900 text-white hover:bg-stone-700 focus-visible:outline-stone-900"
+                      : "border border-stone-300/80 bg-white/70 text-stone-800 hover:border-stone-400 hover:bg-white focus-visible:outline-stone-700"
+                  }`}
+                >
+                  {option.cta}
+                </a>
+              </div>
             </li>
           ))}
         </ul>
