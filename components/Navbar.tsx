@@ -19,6 +19,9 @@ const mobileLinks = [
   { href: "#faq", label: "Preguntas frecuentes" },
 ];
 
+const hamburgerLineClasses =
+  "absolute left-0 h-[1.5px] w-5 rounded-full bg-stone-600 transition-all duration-300 ease-out";
+
 export function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const navRef = useRef<HTMLElement | null>(null);
@@ -113,20 +116,20 @@ export function Navbar() {
             onClick={() => setIsOpen((current) => !current)}
             className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-stone-200/80 bg-white text-stone-700 shadow-sm transition-colors hover:bg-stone-50 hover:text-stone-900 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-stone-700 md:hidden"
           >
-            <span className="relative h-4 w-4" aria-hidden="true">
+            <span className="relative h-5 w-5" aria-hidden="true">
               <span
-                className={`absolute left-0 top-0 h-0.5 w-4 rounded-full bg-current transition-transform duration-300 ease-out ${
-                  isOpen ? "translate-y-[7px] rotate-45" : ""
+                className={`${hamburgerLineClasses} top-[3px] ${
+                  isOpen ? "translate-y-[6px] rotate-45" : ""
                 }`}
               />
               <span
-                className={`absolute left-0 top-[7px] h-0.5 w-4 rounded-full bg-current transition-opacity duration-300 ease-out ${
+                className={`${hamburgerLineClasses} top-[9px] ${
                   isOpen ? "opacity-0" : "opacity-100"
                 }`}
               />
               <span
-                className={`absolute bottom-0 left-0 h-0.5 w-4 rounded-full bg-current transition-transform duration-300 ease-out ${
-                  isOpen ? "-translate-y-[7px] -rotate-45" : ""
+                className={`${hamburgerLineClasses} top-[15px] ${
+                  isOpen ? "-translate-y-[6px] -rotate-45" : ""
                 }`}
               />
             </span>
@@ -134,7 +137,7 @@ export function Navbar() {
         </div>
 
         <div
-          className={`grid transition-[grid-template-rows,opacity,transform] duration-300 ease-out md:hidden ${
+          className={`grid overflow-hidden transition-[grid-template-rows,opacity,transform] duration-300 ease-out md:hidden ${
             isOpen
               ? "grid-rows-[1fr] opacity-100 translate-y-0"
               : "grid-rows-[0fr] -translate-y-2 opacity-0"
@@ -143,8 +146,10 @@ export function Navbar() {
           <div
             id="mobile-menu"
             aria-hidden={!isOpen}
-            className={`mt-4 grid min-h-0 gap-2 overflow-hidden border-t border-stone-200/70 pt-4 ${
-              isOpen ? "" : "pointer-events-none"
+            className={`grid min-h-0 overflow-hidden ${
+              isOpen
+                ? "mt-4 gap-2 border-t border-stone-200/70 pt-4"
+                : "mt-0 gap-0 border-t-0 pt-0 pointer-events-none"
             }`}
             onTouchStart={handleTouchStart}
             onTouchEnd={handleTouchEnd}
