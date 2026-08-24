@@ -28,7 +28,7 @@ export function Navbar() {
     <header className="sticky top-0 z-50 border-b border-stone-200/70 bg-[#fffdfa]/90 backdrop-blur">
       <nav
         aria-label="Navegación principal"
-        className="mx-auto max-w-6xl px-6 py-3 sm:px-8 lg:px-10"
+        className="mx-auto max-w-6xl px-6 py-1.5 sm:px-8 lg:px-10"
       >
         <div className="flex items-center justify-between gap-6">
           <a
@@ -43,7 +43,7 @@ export function Navbar() {
               width={220}
               height={71}
               priority
-              className="w-[150px] object-contain sm:w-[178px]"
+              className="w-[180px] object-contain sm:w-[212px]"
             />
           </a>
 
