@@ -9,9 +9,9 @@ export default function manifest(): MetadataRoute.Manifest {
     display: "standalone",
     icons: [
       {
-        src: "/favicon.svg",
-        sizes: "64x64",
-        type: "image/svg+xml",
+        src: "/brand/favicon-estimulacion-cognitiva-guadalajara.png",
+        sizes: "666x640",
+        type: "image/png",
       },
     ],
   };

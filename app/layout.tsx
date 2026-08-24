@@ -49,7 +49,8 @@ export const metadata: Metadata = {
     follow: true,
   },
   icons: {
-    icon: "/favicon.svg",
+    icon: "/brand/favicon-estimulacion-cognitiva-guadalajara.png",
+    apple: "/brand/favicon-estimulacion-cognitiva-guadalajara.png",
   },
 };
 
