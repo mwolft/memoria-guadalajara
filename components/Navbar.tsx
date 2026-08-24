@@ -43,7 +43,7 @@ export function Navbar() {
               width={220}
               height={71}
               priority
-              className="w-[180px] object-contain sm:w-[212px]"
+              className="w-[216px] object-contain sm:w-[254px]"
             />
           </a>
 
