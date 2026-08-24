@@ -33,9 +33,10 @@ export function About() {
           </h2>
           <div className="mt-5 space-y-4 text-lg leading-8 text-stone-700">
             <p>
-              Detrás de Memoria Guadalajara hay una atención personal para
-              personas mayores y familias, con formación de Máster en
-              Gerontología Social y una forma de trabajar cercana y respetuosa.
+              Detrás de Memoria Guadalajara está Marcos Arias, profesional con
+              formación de Máster en Gerontología Social, que ofrece una
+              atención personal a personas mayores y familias desde una forma
+              de trabajar cercana y respetuosa.
             </p>
             <p>
               Las sesiones de estimulación cognitiva se realizan a domicilio y
