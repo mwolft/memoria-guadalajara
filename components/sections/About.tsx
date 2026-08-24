@@ -26,21 +26,21 @@ export function About() {
         <div className="max-w-2xl">
           <p className="mb-4 flex items-center gap-3 text-sm font-medium text-stone-600">
             <span className="h-px w-8 bg-stone-300" aria-hidden="true" />
-            Sobre mí
+            Quién te acompaña
           </p>
           <h2 className="text-3xl font-semibold leading-tight tracking-normal text-stone-950 sm:text-4xl">
-            Atención profesional y cercana en el domicilio
+            Una atención cercana, profesional y adaptada a cada persona
           </h2>
           <div className="mt-5 space-y-4 text-lg leading-8 text-stone-700">
             <p>
-              Trabajo con personas mayores y familias que buscan mantener la
-              memoria, la atención y la autonomía desde un entorno cómodo y
-              familiar, con formación de Máster en Gerontología Social.
+              Detrás de Memoria Guadalajara hay una atención personal para
+              personas mayores y familias, con formación de Máster en
+              Gerontología Social y una forma de trabajar cercana y respetuosa.
             </p>
             <p>
-              Cada sesión de estimulación cognitiva se adapta a la situación de
-              la persona, respetando sus ritmos y creando un espacio tranquilo
-              de acompañamiento en el domicilio.
+              Las sesiones de estimulación cognitiva se realizan a domicilio y
+              se adaptan a cada persona para trabajar memoria, atención y
+              autonomía desde un entorno cómodo y familiar.
             </p>
           </div>
 

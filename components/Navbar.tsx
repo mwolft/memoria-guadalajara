@@ -7,14 +7,14 @@ import { whatsappHref } from "@/lib/contact";
 const desktopLinks = [
   { href: "#process", label: "Cómo funciona" },
   { href: "#tarifas", label: "Tarifas" },
-  { href: "#about", label: "Sobre mí" },
+  { href: "#about", label: "Quién te acompaña" },
   { href: "#faq", label: "Preguntas frecuentes" },
 ];
 
 const mobileLinks = [
   { href: "#process", label: "Cómo son las sesiones" },
   { href: "#tarifas", label: "Tarifas" },
-  { href: "#about", label: "Sobre mí" },
+  { href: "#about", label: "Quién te acompaña" },
   { href: "#zona", label: "Zona de atención" },
   { href: "#faq", label: "Preguntas frecuentes" },
 ];
