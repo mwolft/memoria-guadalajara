@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
@@ -7,6 +7,7 @@ const description =
   "Estimulación cognitiva para personas mayores en Guadalajara. Atención a domicilio, acompañamiento profesional y sesiones personalizadas.";
 const heroImage =
   "https://res.cloudinary.com/dhm8zqtkq/image/upload/v1781419090/a-domicilio_yhmzlf.png";
+const brandThemeColor = "#BD8064";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -52,6 +53,10 @@ export const metadata: Metadata = {
     icon: "/brand/favicon-estimulacion-cognitiva-guadalajara.png",
     apple: "/brand/favicon-estimulacion-cognitiva-guadalajara.png",
   },
+};
+
+export const viewport: Viewport = {
+  themeColor: brandThemeColor,
 };
 
 export default function RootLayout({
