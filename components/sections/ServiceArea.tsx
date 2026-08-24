@@ -4,6 +4,10 @@ export function ServiceArea() {
     "Azuqueca de Henares",
     "Cabanillas del Campo",
     "Marchamalo",
+    "Alovera",
+    "Fontanar",
+    "Yunquera de Henares",
+    "Humanes",
   ];
 
   return (
@@ -36,7 +40,8 @@ export function ServiceArea() {
               ))}
             </ul>
             <p className="mt-5 leading-7 text-stone-700">
-              Si tu zona no aparece, puedes consultarnos por WhatsApp.
+              Si tu municipio no aparece, puedes consultarnos por WhatsApp y
+              valoramos la disponibilidad.
             </p>
           </div>
         </div>

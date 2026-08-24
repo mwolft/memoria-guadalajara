@@ -18,7 +18,7 @@ export function FAQ() {
     {
       question: "¿En qué zonas se ofrece el servicio?",
       answer:
-        "Principalmente en Guadalajara, Azuqueca de Henares, Cabanillas del Campo y Marchamalo.",
+        "Principalmente en Guadalajara, Azuqueca de Henares, Cabanillas del Campo, Marchamalo, Alovera, Fontanar, Yunquera de Henares y Humanes. Otros municipios cercanos se pueden valorar según disponibilidad.",
     },
     {
       question: "¿Cómo puedo consultar mi caso?",
