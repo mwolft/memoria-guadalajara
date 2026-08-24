@@ -25,10 +25,10 @@ export function Navbar() {
   const closeMenu = () => setIsOpen(false);
 
   return (
-    <header className="px-6 pt-5 sm:px-8 lg:px-10">
+    <header className="sticky top-0 z-50 border-b border-stone-200/70 bg-[#fffdfa]/90 backdrop-blur">
       <nav
         aria-label="Navegación principal"
-        className="mx-auto max-w-6xl rounded-3xl border border-stone-200/70 bg-white/75 px-4 py-3 shadow-[0_10px_30px_rgba(68,64,60,0.06)] backdrop-blur sm:px-5"
+        className="mx-auto max-w-6xl px-6 py-3 sm:px-8 lg:px-10"
       >
         <div className="flex items-center justify-between gap-6">
           <a
@@ -43,7 +43,7 @@ export function Navbar() {
               width={220}
               height={71}
               priority
-              className="h-9 w-auto object-contain sm:h-10"
+              className="w-[150px] object-contain sm:w-[178px]"
             />
           </a>
 
