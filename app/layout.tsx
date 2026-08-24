@@ -4,7 +4,7 @@ import "./globals.css";
 
 const title = "Estimulación cognitiva a domicilio en Guadalajara";
 const description =
-  "Estimulación cognitiva para personas mayores en Guadalajara. Atención a domicilio, acompañamiento profesional y sesiones personalizadas.";
+  "Estimulación cognitiva a domicilio en Guadalajara para personas mayores. Sesiones personalizadas con Marcos Arias, Máster en Gerontología Social.";
 const heroImage =
   "https://res.cloudinary.com/dhm8zqtkq/image/upload/v1781419090/a-domicilio_yhmzlf.png";
 const brandThemeColor = "#BD8064";
